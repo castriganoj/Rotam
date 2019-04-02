@@ -1,0 +1,15 @@
+Set up Database -
+Install NPM packages-
+Run app
+Display dashboard page
+...dashboard page
+create components for each dash kpi card
+static data for each card for now in component
+move static data to a http service
+Server Side
+define data models needed to complete dasboard cards
+create entities
+update database w/ entities
+create api endpoints for entities
+disable links to other apps. 
+
