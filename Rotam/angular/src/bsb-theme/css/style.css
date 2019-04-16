@@ -94,7 +94,7 @@ a{cursor: pointer;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 12;
+  z-index: 5;
   width: 100%; }
 .navbar .navbar-brand {
     white-space: nowrap;
@@ -6719,7 +6719,8 @@ fieldset[disabled] .form-control {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 12;
+  z-index: -1;
+  min-height: 175px;
   width: 100%; }
   .navbar .navbar-brand {
     white-space: nowrap;

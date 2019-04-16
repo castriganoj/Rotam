@@ -1,12 +1,20 @@
 Set up Database -
 Install NPM packages-
-Run app
-Display dashboard page
-...dashboard page
+Run app -
+Display dashboard page -
+...dashboard page -
+Create desired cards in home component. 
+Once a card is created, remove and create separate component for it. 
+    Keep high level grid styling in home component. 
 create components for each dash kpi card
-static data for each card for now in component
-move static data to a http service
-Server Side
+static data for each card for now in 
+    html, 
+    component, 
+    service, 
+    http server controller, 
+    entitity
+    db
+
 define data models needed to complete dasboard cards
 create entities
 update database w/ entities

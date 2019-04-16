@@ -1,0 +1,7 @@
+Remove 'Sample Dashboard'-
+Remove 3 boxes upper left-
+Remove first level cards-
+Add 2 column cards
+Add 1 column card
+Section off cards. 
+
