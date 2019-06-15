@@ -29,10 +29,11 @@ export class HomeComponent extends AppComponentBase implements AfterViewInit {
 
             initDonutChart();
             initSparkline();
+            initChartLine();
         });
 
         let realtime = 'on';
-        
+
         function initSparkline() {
             $('.sparkline').each(function () {
                 const $this = $(this);
@@ -40,26 +41,46 @@ export class HomeComponent extends AppComponentBase implements AfterViewInit {
             });
         }
 
+
+        function initChartLine() {
+            $('.chart.chart-line').each(function () {
+                const $this = $(this);
+                $this.sparkline('html', {
+                    type: 'line',
+                    width: '60px',
+                    height: '45px',
+                    lineColor: '#fff',
+                    lineWidth: 1.3,
+                    fillColor: 'rgba(0,0,0,0)',
+                    spotColor: 'rgba(255,255,255,0.40)',
+                    maxSpotColor: 'rgba(255,255,255,0.40)',
+                    minSpotColor: 'rgba(255,255,255,0.40)',
+                    spotRadius: 3,
+                    highlightSpotColor: '#fff'
+                });
+            });
+        }
+
         function initDonutChart() {
             ((window as any).Morris).Donut({
                 element: 'donut_chart',
                 data: [{
-                        label: 'Chrome',
-                        value: 37
-                    }, {
-                        label: 'Firefox',
-                        value: 30
-                    }, {
-                        label: 'Safari',
-                        value: 18
-                    }, {
-                        label: 'Opera',
-                        value: 12
-                    },
-                    {
-                        label: 'Other',
-                        value: 3
-                    }],
+                    label: 'Chrome',
+                    value: 37
+                }, {
+                    label: 'Firefox',
+                    value: 30
+                }, {
+                    label: 'Safari',
+                    value: 18
+                }, {
+                    label: 'Opera',
+                    value: 12
+                },
+                {
+                    label: 'Other',
+                    value: 3
+                }],
                 colors: ['rgb(233, 30, 99)', 'rgb(0, 188, 212)', 'rgb(255, 152, 0)', 'rgb(0, 150, 136)', 'rgb(96, 125, 139)'],
                 formatter: function (y) {
                     return y + '%';
